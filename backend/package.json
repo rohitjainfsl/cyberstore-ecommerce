@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "bun index.js",
+    "dev": "bun --hot index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "data:import": "node seeder.js",
-    "data:destroy": "node seeder.js -d"
+    "data:import": "bun seeder.js",
+    "data:destroy": "bun seeder.js -d"
   },
   "keywords": [],
   "author": "",
